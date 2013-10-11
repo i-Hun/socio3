@@ -1,0 +1,269 @@
+/*
+COLORS
+green: #4b6
+red: rgba(233,58,48,1)
+*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+body {
+	font-family: 'PT Sans', "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+}
+
+h1, h2, h3, h4, ol.commentlist cite.fn, h5, h6 {
+	font-family: 'PT Sans', "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6 {
+color: #333332;
+
+}
+
+a {
+	color: rgba(233,58,48,1);
+
+}
+
+.cover header.row .columns {
+	z-index: 1;
+}
+.cover header.row h1 a{
+	color: #fff;
+	font-weight: 600;
+	font-size: 50px;
+	color: #222;
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+	
+}
+
+.subheader {
+	color: #fff;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+}
+.cover {
+	width: 100%;
+	height: 400px;
+	background: #333;
+}
+
+/*BEGIN Top-nav*/
+.contain-to-grid {
+	height: 50px;
+}
+.contain-to-grid, 
+.top-bar, 
+.top-bar-section li a:not(.button):hover,
+.top-bar-section ul li > a:hover,
+.top-bar-section li a:not(.button),
+.top-bar-section ul li > a,
+.top-bar-section .has-form {
+	background: #333;
+}
+
+.top-bar-section > ul > .divider {
+	border: none;
+}
+
+.top-bar-section ul li > a {
+	color: #D8D8D8;
+	font-size: 1em;
+	font-weight: 400;
+	background: #333;
+}
+
+.top-bar.expanded {
+		z-index: 2;
+}
+.top-bar.expanded .title-area {
+	background: #333;
+}
+/*END Top-nav*/
+
+/*BEGIN slider*/
+.responsive-slider.flexslider {
+	margin-top: -400px;
+	float: left;
+}
+.responsive-slider.flexslider .slide {
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+}
+/*END Slider*/
+
+/*BEGIN breadcrumbs*/
+.breadcrumbs {
+	border: none;
+	background: none;
+	color: #bbb;
+	float: right;
+	position: relative;
+	top: -35px;
+}
+/*END breadcrumbs*/
+
+/*BEGIN Tabs*/
+.section-container.tabs section .content, .section-container.tabs .section .content {
+	border: none;
+
+}
+
+.section-container.tabs p.title {
+	font-size: 24px;
+}
+.section-container.tabs section:last-child .title, 
+.section-container.tabs .section:last-child .title {
+	border: none;
+}
+
+.section-container.tabs section .title, 
+.section-container.tabs .section .title {
+	border: none;
+	width: 33.33333333333333%;
+	text-align: center;
+}
+
+.section-container section .title, 
+.section-container .section .title, 
+.section-container.auto section .title, 
+.section-container.auto .section .title {
+	background-color: #fff;
+}
+
+.section-container.tabs section.active .title, 
+.section-container.tabs .section.active .title {
+	background-color: #eee;
+}
+
+.section-container .tabs {
+
+}
+/*END Tabs*/
+
+/*BEGIN nice_block*/
+.nice_block_container {
+	margin: 0 10px
+}
+.nice_block a:hover h3 {
+	color: rgba(233,58,48,1);
+}
+.nice_block p {
+	text-align: justify;
+} 
+.post_thumbnail {
+	height: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+}
+/*END nice_block*/
+
+/*BEGIN Page*/
+.single .header_post_cont {
+	background: #EEEeee;
+}
+
+.single .header_post_cont .subheader {
+	color: #555;
+	text-shadow: none;
+}
+
+
+.page_nav>ul {
+	margin: 0;
+	list-style-type: none;
+}
+.page_nav ul li a{
+	color: #333;
+	font-size: 20px;
+	text-decoration: underline;
+
+}
+.page_nav ul li a:hover{
+	color: rgba(233,58,48,1);
+
+}
+
+.page_nav>ul>li.active>a{
+	font-weight: 600;
+	color: rgba(233,58,48,1);
+}
+
+/*END Page*/
+
+/*BEGIN Forms*/
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+	box-shadow: none;
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 2px;	
+
+ }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="week"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="time"]:focus,
+	input[type="url"]:focus,
+	textarea:focus {
+		background: #fff;
+		border-color: rgba(233,58,48,1);
+		outline: none; }
+	input[type="text"][disabled],
+	input[type="password"][disabled],
+	input[type="date"][disabled],
+	input[type="datetime"][disabled],
+	input[type="datetime-local"][disabled],
+	input[type="month"][disabled],
+	input[type="week"][disabled],
+	input[type="email"][disabled],
+	input[type="number"][disabled],
+	input[type="search"][disabled],
+	input[type="tel"][disabled],
+	input[type="time"][disabled],
+	input[type="url"][disabled],
+	textarea[disabled] {
+		background-color: #dddddd; }
+
+/*END Forms*/
+
+/*BEGIN Post*/
+.entry-content p, .entry-content li {
+	font-family: Georgia,"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 1.25em;
+	line-height: 1.7;
+	color: #4c4d51;
+}
+
+.post_info {
+	padding-top: 24px;
+}
+.post_info .updated, .post_info p.author,
+.post_info .updated a, .post_info p.author a{
+	color: #BDC3C7;
+}
+
+/*END Post*/
+.teacher-photo {
+	float: left;
+}

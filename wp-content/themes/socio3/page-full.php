@@ -2,7 +2,7 @@
 /*
 Template Name: Full Width
 */
-get_header(); ?>
+get_header("post"); ?>
 
 <!-- Row for main content area -->
 	<div class="small-12 large-12 columns" role="main">

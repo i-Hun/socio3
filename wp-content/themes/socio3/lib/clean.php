@@ -119,7 +119,7 @@ function reverie_scripts_and_styles() {
     // deregister WordPress built in jQuery
     wp_deregister_script('jquery');
     // register Google jQuery
-    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", false, null, true);
+    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", false, null, false);
 
 	// register jQuery noConflict mode script
 	wp_register_script( 'jquery-noconflict', get_template_directory_uri() . '/js/jQuery-noConflict.js', array('jquery'), '1.0', true );
@@ -129,6 +129,8 @@ function reverie_scripts_and_styles() {
     
     // adding Foundation scripts file in the footer
     wp_register_script( 'reverie-js', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '', true );
+
+    wp_register_script( 'freetile', get_template_directory_uri() . '/js/jquery.freetile.min.js', array('jquery'), '', true );
     
     global $is_IE;
     if ($is_IE) {
@@ -136,6 +138,7 @@ function reverie_scripts_and_styles() {
     }
 
     // enqueue styles and scripts
+    
     wp_enqueue_script( 'reverie-modernizr' );
     wp_enqueue_style('reverie-ie-only');
     /*
@@ -143,7 +146,7 @@ function reverie_scripts_and_styles() {
     using the google cdn. That way it stays cached
     and your site will load faster.
     */
-    wp_enqueue_script( 'jquery' );
+    // wp_enqueue_script( 'jquery' );
 	
 	// enqueue jQuery noConflict mode script and Migrate plugin
 	wp_enqueue_script ('jquery-noconflict');
@@ -151,6 +154,8 @@ function reverie_scripts_and_styles() {
 	
     wp_enqueue_script( 'reverie-js' );
     wp_enqueue_script( 'html5shiv' );
+
+    // wp_enqueue_script( 'freetile' );
 
   }
 }

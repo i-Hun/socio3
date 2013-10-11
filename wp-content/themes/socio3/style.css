@@ -28,11 +28,6 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 -------------------------------------------------- */
 
 /* Start to customize Reverie */
-header.row,
-.container.row,
-.row.full-width {
-  background-color: rgba(255, 255, 255, 0.9);
-}
 
 h4.subheader, ol.commentlist cite.subheader.fn {
   margin-top: -1em;
