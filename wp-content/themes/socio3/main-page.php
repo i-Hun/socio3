@@ -6,7 +6,8 @@ get_header(); ?>
 
 <!-- Row for main content area -->
 	<div class="large-9 columns news">
-		<h2>Новости</h2>
+		<h2 class="titles">Новости</h2>
+		<hr>
 		<?php
 			// $postcounter = 1;
 			$recent = new WP_Query(array( 'showposts' => '10', 'cat' => '-9' ));
@@ -41,11 +42,14 @@ get_header(); ?>
 
 		<?php endif; ?>
 		<?php endwhile; ?>
+	<div class="row">
+		<div class="large-4 large-centered columns"><a href="/?cat=4" class="button expand more_from_cat">Остальные записи</a></div>
+	</div>
 	</div>
 	<div class="large-3 columns events">
 		<?php echo events_sidebar(); ?>
 	</div>
-			
+
 
 </div>
 <?php wp_enqueue_script( 'freetile' ); ?>

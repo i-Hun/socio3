@@ -1,7 +1,7 @@
 /*
 COLORS
 green: #4b6
-red: rgba(233,58,48,1)
+red: #ff9900
 */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
 body {
@@ -18,8 +18,12 @@ color: #333332;
 
 }
 
+.titles {
+	color: #ccc;
+	font-weight: 100;
+}
 a {
-	color: rgba(233,58,48,1);
+	color: #ff9900;
 
 }
 
@@ -145,7 +149,7 @@ a {
 	margin: 0 10px
 }
 .nice_block a:hover h3 {
-	color: rgba(233,58,48,1);
+	color: #ff9900;
 }
 .nice_block p {
 	text-align: justify;
@@ -180,13 +184,13 @@ a {
 
 }
 .page_nav ul li a:hover{
-	color: rgba(233,58,48,1);
+	color: #ff9900;
 
 }
 
 .page_nav>ul>li.active>a{
 	font-weight: 600;
-	color: rgba(233,58,48,1);
+	color: #ff9900;
 }
 
 /*END Page*/
@@ -227,7 +231,7 @@ textarea {
 	input[type="url"]:focus,
 	textarea:focus {
 		background: #fff;
-		border-color: rgba(233,58,48,1);
+		border-color: #ff9900;
 		outline: none; }
 	input[type="text"][disabled],
 	input[type="password"][disabled],
@@ -249,8 +253,7 @@ textarea {
 
 /*BEGIN Post*/
 .entry-content p, .entry-content li {
-	font-family: Georgia,"Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 1.7;
 	color: #4c4d51;
 }
@@ -267,3 +270,16 @@ textarea {
 .teacher-photo {
 	float: left;
 }
+
+/*BEGIN Events*/
+.events h3 {
+	font-size: 18px;
+}
+
+.events ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+
+/*END Events*/
