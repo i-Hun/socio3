@@ -1,8 +1,3 @@
-/*
-COLORS
-green: #4b6
-red: #ff9900
-*/
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
 body {
 	font-family: 'PT Sans', "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -18,10 +13,6 @@ color: #333332;
 
 }
 
-.titles {
-	color: #ccc;
-	font-weight: 100;
-}
 a {
 	color: #ff9900;
 
@@ -112,9 +103,6 @@ a {
 
 }
 
-.section-container.tabs p.title {
-	font-size: 24px;
-}
 .section-container.tabs section:last-child .title, 
 .section-container.tabs .section:last-child .title {
 	border: none;
@@ -123,25 +111,46 @@ a {
 .section-container.tabs section .title, 
 .section-container.tabs .section .title {
 	border: none;
-	width: 33.33333333333333%;
 	text-align: center;
 }
 
+.section-container section .title a, 
+.section-container .section .title a, 
+.section-container.auto section .title a, 
+.section-container.auto .section .title a{
+	color: #ccc;
+	font-size: 42px;
+	font-weight: 100;
+	padding: 0 0.5em;
+
+}
+.cat-title {
+	color: #333;
+	font-size: 42px;
+	font-weight: 100;
+}
 .section-container section .title, 
 .section-container .section .title, 
 .section-container.auto section .title, 
-.section-container.auto .section .title {
+.section-container.auto .section .title{
+	background-color: #fff;
+}
+.section-container section .title:hover, 
+.section-container .section .title:hover, 
+.section-container.auto section .title:hover, 
+.section-container.auto .section .title:hover{
 	background-color: #fff;
 }
 
-.section-container.tabs section.active .title, 
-.section-container.tabs .section.active .title {
-	background-color: #eee;
+.section-container.tabs section.active .title a, 
+.section-container.tabs .section.active .title a{
+	color: #333;
 }
 
-.section-container .tabs {
-
+.section-container.tabs section.active {
+	height: 50px;
 }
+
 /*END Tabs*/
 
 /*BEGIN nice_block*/
