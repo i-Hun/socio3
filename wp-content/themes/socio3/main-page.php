@@ -64,7 +64,28 @@ get_header(); ?>
 	</div>
 	<div class="large-3 columns events">
 		<h2 class="cat-title">Объявления</h2>
+						<?php
+							$recent = new WP_Query(array( 'showposts' => '5', 'cat' => '62' ));
+							while($recent->have_posts()) : $recent->the_post();
+							global $more;
+							$more = 0;
+						?>
+						<div class='row'>
+						<article class="large-12 columns<?php $selected = $cfs->get('selected_post');
+							if ($selected) {
+							 	echo 'selected';
+							 } 
+							?>">
 
+							<a href="<?php the_permalink() ?>">
+								<div class="pad"><h3><?php the_title(); ?></h3></div>
+							</a>
+
+								<div class="pad announce_text"><?php the_content(''); ?></div>		
+						</article>
+						</div>
+
+						<?php endwhile; ?>
 	</div>
 
 
