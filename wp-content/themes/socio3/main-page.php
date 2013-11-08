@@ -47,8 +47,6 @@ get_header(); ?>
 						<?php endwhile; ?>
 					</p>
 				</div>
-				<a href="/?cat=4" class="more_from_cat">Остальные записи</a>
-
 			</section>
 			<section>
 				<p class="title" data-section-title><a href="#events">События</a></p>

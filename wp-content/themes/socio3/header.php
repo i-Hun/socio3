@@ -13,6 +13,8 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<script type='text/javascript' src='http://socio3/wp-content/themes/socio3/js/skrollr.min.js'></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.stellar.js"></script>
+
 
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
@@ -46,13 +48,13 @@
 <body <?php body_class(); ?>>
 	<div class="contain-to-grid">
 		<!-- Starting the Top-Bar -->
-		<nav class="top-bar">
+		<nav  class="top-bar">
 			<ul class="title-area show-for-small">
 				<li class="name">
 					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</li>
 				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Меню</span></a></li>
 			</ul>
 			<section class="top-bar-section">
 			<?php
@@ -75,16 +77,21 @@
 <div class="cover" >
 	<header class="row" role="banner">
 		<div class="small-12 columns">
-			<h1 data-stellar-ratio="0.2" data-stellar-horizontal-offset="300" data-stellar-vertical-offset="100"><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-			<h4 data-stellar-ratio="0.4" data-stellar-horizontal-offset="400" data-stellar-vertical-offset="150" class="subheader"><?php bloginfo('description'); ?></h4>
+			<h1 ><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 		</div>
 	</header>
 </div>
-<div id="main_slider">
-	<?php echo do_shortcode( '[responsive_slider]' ); ?>
+<div id="header-img-cont">
+	<div id="header-img">
+</div>
 </div>
 <!-- Start the main container -->
 
-
+<script type="text/javascript">
+$(function(){
+	$.stellar();
+});
+</script>
 <section class="container" role="document">
 	<div class="row">
