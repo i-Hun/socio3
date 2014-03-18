@@ -21,26 +21,27 @@ a {
 .top-bar .toggle-topbar.menu-icon a {
 	color: black; 
 }
-.cover header.row .columns {
-	z-index: 1;
+header.header-img {
+	width: 100%;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	background-image: url("/wp-content/img/bg/header.png");
 }
-.cover header.row h1 a{
+header.header-img h1 a{
 	color: #fff;
 	font-weight: 400;
 	font-size: 60px;
-	text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-	
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
 }
 
 .subheader {
 	color: #ccc;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
 }
-.cover {
-	width: 100%;
-	height: 400px;
-	background: #333;
-}
+
 /*END Header */
 .post-header .name h1 a{
 	color: #333;
@@ -88,20 +89,6 @@ a {
 	background: #333;
 }
 /*END Top-nav*/
-
-/*BEGIN slider*/
-#header-img-cont {
-	margin-top: -400px;
-
-}
-#header-img {
-	height: 400px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover !important;
-	background-image: url("/wp-content/img/bg/header.png");
-}
-/*END Slider*/
 
 /*BEGIN breadcrumbs*/
 .breadcrumbs {
@@ -295,14 +282,12 @@ textarea {
 /*END Post*/
 
 /*BEGIN Events*/
-.events h3 {
+.announcements h3 {
 	font-size: 18px;
 }
 
-.events ul {
-	list-style-type: none;
-	margin-left: 0;
+.announcements {
+	background-color: #f4f4f4;
 }
-
 
 /*END Events*/

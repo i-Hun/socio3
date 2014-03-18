@@ -48,7 +48,7 @@
 <body <?php body_class(); ?>>
 	<div class="contain-to-grid">
 		<!-- Starting the Top-Bar -->
-		<nav  class="top-bar">
+		<nav class="top-bar">
 			<ul class="title-area show-for-small">
 				<li class="name">
 					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -74,18 +74,19 @@
 		</nav>
 		<!-- End of Top-Bar -->
 	</div>
-<div class="cover" >
-	<header class="row" role="banner">
-		<div class="small-12 columns">
-			<h1 ><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+
+<header class="header-img" role="banner">
+	<div class="row">
+		<div class="small-2 columns">
+			<img style="margin-top: 17px;" src="/wp-content/img/logo_old.png">
+		</div>
+		<div class="small-10 columns">
+			<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 			<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 		</div>
-	</header>
-</div>
-<div id="header-img-cont">
-	<div id="header-img">
-</div>
-</div>
+	</div>
+</header>
+
 <!-- Start the main container -->
 
 <script type="text/javascript">

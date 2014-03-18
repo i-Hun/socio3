@@ -84,12 +84,13 @@ get_header(); ?>
 
 						<?php endif; ?>
 						<?php endwhile; ?>
-				</div>
+				
 			</section>
+			</div>
 		</div>
 
-	</div>
-	<div class="large-3 columns events">
+
+	<div class="large-3 columns announcements">
 		<h2 class="cat-title">Объявления</h2>
 						<?php
 							$recent = new WP_Query(array( 'showposts' => '5', 'cat' => '62' ));
@@ -114,7 +115,7 @@ get_header(); ?>
 
 						<?php endwhile; ?>
 	</div>
-
+	</div>
 
 </div>
 <?php wp_enqueue_script( 'freetile' ); ?>
