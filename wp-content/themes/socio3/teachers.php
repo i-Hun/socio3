@@ -124,7 +124,7 @@ get_header("post"); ?>
 								</div>
 								<div class="large-4 small-12 columns">
 									<div class="boxgrid ">
-										<img src="/wp-content/img/teachers_old/user-woman.png" width="210" align="left">
+										<img src="/wp-content/img/teachers/bagno.jpg" width="210" align="left">
 										<div class="cover">
 											<h4>Багно Ирина Геннадьевна</h4>
 											<h5>Доцент, кандидат философских наук.</h5>
@@ -138,7 +138,7 @@ get_header("post"); ?>
 
 								<div class="large-4 small-12 columns">
 									<div class="boxgrid ">
-										<img src="/wp-content/img/teachers_old/varova.png" height="280" width="210" align="left">
+										<img src="/wp-content/img/teachers/varova.jpg" height="280" width="210" align="left">
 										<div class="cover">
 											<h4>Варова Наталья Леонидовна</h4>
 											<h5>Доцент, кандидат философских наук.</h5>
@@ -153,10 +153,14 @@ get_header("post"); ?>
 							<div class="row">
 								<div class="large-4 small-12 columns">
 									<div class="boxgrid ">
-										<img src="/wp-content/img/teachers_old/user-man.png" height="280" width="210" align="left">
+										<img src="/wp-content/img/teachers/der.jpg" height="280" width="210" align="left">
 										<div class="cover">
 											<h4>Деревянченко Юрий Иванович</h4>
 											<h5>Доцент, кандидат философских наук.</h5>
+											<p>
+												<a href="mailto:der@bk.ru" >der@bk.ru</a>
+											</p>
+
 										</div>
 									</div>
 								</div>
@@ -193,7 +197,7 @@ get_header("post"); ?>
 							<div class="row">
 								<div class="large-4 small-12 columns">
 									<div class="boxgrid ">
-										<img src="/wp-content/img/teachers/mv.jpg" height="280" width="210" align="left">
+										<img src="/wp-content/img/teachers/mv2.jpg" height="280" width="210" align="left">
 										<div class="cover">
 											<h4>Озерова Мария Викторовна</h4>
 											<h5>Старший преподаватель</h5>
@@ -201,6 +205,18 @@ get_header("post"); ?>
 												<a class="nice small radius secondary button"  href="http://socio.omsu.ru/?page_id=215#nice1">Дисциплины »</a>
 												<a  class="nice small radius secondary button" href="http://socio.omsu.ru/?page_id=215#nice2">Публикации »</a>
 												<a href="mailto:mary_erof@mail.ru" >mary_erof@mail.ru</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="large-4 small-12 columns">
+									<div class="boxgrid ">
+										<img src="/wp-content/img/teachers/gorodec.jpg" width="210" alt="Павленко Ксения Викторовна" align="left">
+										<div class="cover">
+											<h4>Городецкая Ольга Александровна</h4>
+											<h5>Преподаватель</h5>
+											<p>
+												<a href="mailto:olagor@gmail.com" >olagor@gmail.com</a>
 											</p>
 										</div>
 									</div>

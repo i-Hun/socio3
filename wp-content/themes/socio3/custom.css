@@ -291,3 +291,15 @@ textarea {
 }
 
 /*END Events*/
+
+.more-link {
+	background: #eee;
+	padding: 2px 12px;
+	color: #000;
+
+}
+
+.more-link:hover {
+	background: #f90;
+	color: #fff;
+}
